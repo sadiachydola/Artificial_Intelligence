@@ -1,0 +1,125 @@
+1. pre_processing(remove_url, remove_hashtag, remove_whitespaces, tokenize_sentence,  remove_punctuation, remove_stopwords, apply_stemmer, lemmatize_word)
+	vec = vec_tfidf(tfidf = False)
+	vec = CountVectorizer(preprocessor = identity, lowercase=True, analyzer='char',
+                         tokenizer = identity, ngram_range = (3,9))
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Naive Bayes Accuracy =  0.9045652173913044 or 90.46 %
+
+              precision    recall  f1-score   support
+
+    Business      0.875     0.847     0.861      1132
+    Sci_Tech      0.876     0.887     0.881      1158
+      Sports      0.958     0.975     0.966      1182
+       World      0.907     0.907     0.907      1128
+
+    accuracy                          0.905      4600
+   macro avg      0.904     0.904     0.904      4600
+weighted avg      0.904     0.905     0.904      4600
+
+Confusion Matrix :
+
+ [[ 959  115   10   48]
+ [  81 1027    8   42]
+ [   9    6 1152   15]
+ [  47   25   33 1023]]
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2. pre_processing(remove_url, remove_hashtag, remove_whitespaces, tokenize_sentence,  remove_punctuation, remove_stopwords, apply_stemmer, lemmatize_word)
+	vec = vec_tfidf(tfidf = False)
+	vec = CountVectorizer(preprocessor = identity, lowercase=True, analyzer='char',
+                         tokenizer = identity, ngram_range = (5,8))
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Naive Bayes Accuracy =  0.9060869565217391 or 90.61 %
+
+              precision    recall  f1-score   support
+
+    Business      0.880     0.852     0.865      1132
+    Sci_Tech      0.877     0.889     0.883      1158
+      Sports      0.959     0.974     0.966      1182
+       World      0.906     0.907     0.907      1128
+
+    accuracy                          0.906      4600
+   macro avg      0.905     0.905     0.905      4600
+weighted avg      0.906     0.906     0.906      4600
+
+Confusion Matrix :
+
+ [[ 964  114    9   45]
+ [  77 1030    7   44]
+ [   7    7 1151   17]
+ [  48   24   33 1023]]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3. pre_processing(remove_url, remove_hashtag, remove_whitespaces, tokenize_sentence,  remove_punctuation, remove_stopwords, apply_stemmer, lemmatize_word)
+	vec = vec_tfidf(tfidf = False)
+	vec = CountVectorizer(preprocessor = identity, lowercase=True, analyzer='char',
+                         tokenizer = identity, ngram_range = (6,9))
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Naive Bayes Accuracy =  0.9095652173913044 or 90.96 %
+
+              precision    recall  f1-score   support
+
+    Business      0.877     0.864     0.870      1132
+    Sci_Tech      0.883     0.890     0.887      1158
+      Sports      0.962     0.974     0.968      1182
+       World      0.913     0.908     0.911      1128
+
+    accuracy                          0.910      4600
+   macro avg      0.909     0.909     0.909      4600
+weighted avg      0.909     0.910     0.909      4600
+
+Confusion Matrix :
+
+ [[ 978  108    6   40]
+ [  79 1031    7   41]
+ [   9    6 1151   16]
+ [  49   22   33 1024]]
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. pre_processing(remove_url, remove_hashtag, remove_whitespaces, tokenize_sentence,  remove_punctuation, remove_stopwords, apply_stemmer, lemmatize_word)
+	vec = vec_tfidf(tfidf = False)
+	vec = CountVectorizer(preprocessor = identity, lowercase=True, analyzer='char',
+                         tokenizer = identity, ngram_range = (8,9))
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Naive Bayes Accuracy =  0.9108695652173913 or 91.09 %
+
+              precision    recall  f1-score   support
+
+    Business      0.877     0.872     0.875      1132
+    Sci_Tech      0.889     0.888     0.888      1158
+      Sports      0.960     0.975     0.968      1182
+       World      0.915     0.906     0.910      1128
+
+    accuracy                          0.911      4600
+   macro avg      0.910     0.910     0.910      4600
+weighted avg      0.911     0.911     0.911      4600
+
+Confusion Matrix :
+
+ [[ 987   99    7   39]
+ [  83 1028    7   40]
+ [   8    5 1153   16]
+ [  47   25   34 1022]]
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5.  pre_processing(remove_url, remove_hashtag, remove_whitespaces, tokenize_sentence,  remove_punctuation, remove_stopwords, apply_stemmer, lemmatize_word)
+	vec = vec_tfidf(tfidf = False)
+	vec = CountVectorizer(preprocessor = identity, lowercase=True, analyzer='char',
+                         tokenizer = identity, ngram_range = (9,9))
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Naive Bayes Accuracy =  0.9110869565217391 or 91.11 %
+
+              precision    recall  f1-score   support
+
+    Business      0.879     0.869     0.874      1132
+    Sci_Tech      0.888     0.892     0.890      1158
+      Sports      0.959     0.973     0.966      1182
+       World      0.916     0.908     0.912      1128
+
+    accuracy                          0.911      4600
+   macro avg      0.910     0.911     0.910      4600
+weighted avg      0.911     0.911     0.911      4600
+
+Confusion Matrix :
+
+ [[ 984  100    8   40]
+ [  79 1033    8   38]
+ [  11    5 1150   16]
+ [  46   25   33 1024]]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
